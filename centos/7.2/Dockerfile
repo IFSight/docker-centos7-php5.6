@@ -1,5 +1,5 @@
 FROM fulcrum/centos7
-MAINTAINER Kenn Herman "kenn@ifsight.com"
+MAINTAINER IF Fulcrum "fulcrum@ifsight.net"
 
 # Enable EPEL Repos, update, install PHP 5.6, postdrop correct perms, add the user
 RUN echo "Cache bust 201605270954" && \
