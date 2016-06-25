@@ -1,2 +1,3 @@
-# docker-centos7-php5.6
-IF Docker CentOS 7 PHP 5.6
+# IF Docker  PHP 5.6
+CentOS 7.2
+Alpine 4.3
