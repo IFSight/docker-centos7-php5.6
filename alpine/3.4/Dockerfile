@@ -1,4 +1,4 @@
-FROM fulcrum/alpine3.4
+FROM fulcrum/alpine
 MAINTAINER Kenn Herman "kenn@ifsight.com"
 
 RUN echo "Cache bust 201606232004" && \
