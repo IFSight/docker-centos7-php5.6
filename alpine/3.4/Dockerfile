@@ -1,5 +1,5 @@
 FROM fulcrum/alpine
-MAINTAINER Kenn Herman "kenn@ifsight.com"
+MAINTAINER IF Fulcrum "fulcrum@ifsight.net"
 
 RUN echo "Cache bust 201606232004" && \
     echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
