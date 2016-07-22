@@ -2,7 +2,7 @@ FROM fulcrum/centos7
 MAINTAINER IF Fulcrum "fulcrum@ifsight.net"
 
 # Enable EPEL Repos, update, install PHP 5.6, postdrop correct perms, add the user
-RUN echo "Cache bust 201605270954" && \
+RUN echo "Cache bust PHP 5.6.24" && \
     yum --noplugins install -y \
         http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-7.noarch.rpm \
         http://rpms.famillecollet.com/enterprise/remi-release-7.rpm && \
