@@ -8,7 +8,7 @@ ADD packages /root/packages/
 
 RUN apk update && apk upgrade && \
     cd /root/packages && \
-    apk add --allow-untrusted php5-*-r0.apk postfix && \
+    apk add --allow-untrusted php5-*-r0.apk php5-memcache postfix && \
     adduser -h /var/www/html -s /sbin/nologin -D -H -u 1971 php && \
     chown -R postfix  /var/spool/postfix                        && \
     chgrp -R postdrop /var/spool/postfix/public                 && \
