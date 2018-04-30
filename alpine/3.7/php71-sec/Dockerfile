@@ -8,7 +8,7 @@ ADD packages /root/packages/
 
 RUN apk update && apk upgrade && \
     cd /root/packages && \
-    apk add --allow-untrusted php7-*-r0.apk postfix && \
+    apk add --allow-untrusted php7-*-r0.apk php7-redis php7-zlib postfix && \
     adduser -h /var/www/html -s /sbin/nologin -D -H -u 1971 php && \
     chown -R postfix  /var/spool/postfix                        && \
     chgrp -R postdrop /var/spool/postfix/public                 && \
@@ -26,6 +26,6 @@ RUN apk update && apk upgrade && \
     && apk del curl \
     && rm /blackfire*
 
-ENTRYPOINT ["/usr/bin/php-fpm"]
+ENTRYPOINT ["/usr/sbin/php-fpm7"]
 
 CMD ["--nodaemonize"]
